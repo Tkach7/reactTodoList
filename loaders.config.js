@@ -8,6 +8,5 @@ module.exports = [{
 	loader: 'babel-loader',
 	query: {
 		presets: ['es2015', 'stage-0', 'react']
-		// plugins: ['add-module-exports', 'transform-decorators-legacy', 'transform-runtime']
 	}
 }]

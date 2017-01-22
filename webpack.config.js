@@ -31,24 +31,4 @@ const options = {
     }
 }
 
-// if (!dev) {
-//     options.plugins.push(new AssetsPlugin({
-//         filename: 'js.json',
-//         path: 'manifest',
-//         processOutput(assets) {
-//             for (let key in assets) {
-//                 assets[key + '.js'] = assets[key].js.slice(options.output.publicPath.length);
-//                 delete assets[key];
-//             }
-//             return JSON.stringify(assets);
-//         }
-//     }));
-// } else {
-//     options.module.preLoaders.push({
-//         test: /\.jsx?$/,
-//         loaders: ['eslint'],
-//         include: path.resolve('./src')
-//     })
-// }
-
 module.exports = options;
