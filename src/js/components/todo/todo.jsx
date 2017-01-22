@@ -6,9 +6,7 @@ export default class TodoList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            todoItems: [{
-                value: 'Позвонить президенту'
-            }],
+            todoItems: [],
             newTodoValue: {
                 value: ''
             }
@@ -30,7 +28,8 @@ export default class TodoList extends React.Component {
     }
     // delete one todo
     handleDelete(key) {
-        let newListItems = this.state.todoItems.splice(1, key);
+        let newListItems = this.state.todoItems;
+        newListItems.splice(key, 1);
         this.setState({todoItems: newListItems});
     }
 
@@ -41,7 +40,7 @@ export default class TodoList extends React.Component {
             return (
                 <section key={key} className="todo__item">
                     <div>{item.value}</div>
-                    <div className="icon-delete"></div>
+                    <div className="icon-delete" onClick={() => {_this.handleDelete(key)}}></div>
                 </section>
                 );
         });
