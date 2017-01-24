@@ -1,6 +1,19 @@
-.icon-delete
-	display block
-	background url("../img/icons/cross.png") no-repeat
+.icon
+	display inline-block
 	width 16px
+	height 16px
 	cursor pointer
+	&-delete
+		background url("../img/icons/cross.png") no-repeat
+	&-edit
+		background url("../img/icons/edit.png") no-repeat
+		&.edit--not-active
+			display none
+	&-save
+		background url("../img/icons/save.png") no-repeat
+		&.save--not-active
+			display none
+	&.icon--indent
+		margin-left 10px
+	
 	
