@@ -1,5 +1,5 @@
-# CRUD with React
-simple crud with react framework
+# CRUD with React + Redux
+simple crud with React/Redux framework
 
 ### Requirements
 * Node ^6.9
