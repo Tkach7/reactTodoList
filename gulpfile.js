@@ -25,7 +25,7 @@ gulp.task('dist', ['js', 'stylus', 'assets'], function() {
 
 /** @gulp: make javascript */
 gulp.task('js', function(done) {
-    gulp.src('src/js/index.jsx')
+    gulp.src('src/js/index.js')
         .pipe(plumber())
         .pipe(webpackStream(webpackOptions))
         .pipe(gulp.dest('dist/js'))
